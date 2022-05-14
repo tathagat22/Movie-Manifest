@@ -1,0 +1,10 @@
+@font-face{
+	font-family: 'icarus';
+	src: url('fonts/FilthofIcarus-Regular.ttf');
+}
+*{
+    background-color: black;
+}
+h1{
+    font-family: "icarus";
+}

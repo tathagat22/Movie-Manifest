@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Manifest</title>
+    <link rel="stylesheet" href="style.css">
+  	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://randojs.com/2.0.0.js"></script>
+    <link rel='icon' href='profile/images.png' type='image/x-icon'/ >
+</head>
+<body>
+    <div class="bg-white">
+        <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+          <div class="relative flex items-center justify-between">
+            <a href="index.html" aria-label="Company" title="Company" class="inline-flex items-center headd">
+              <p>Movie Manifest</p>
+            </a>
+            <ul class="flex items-center hidden space-x-8 lg:flex mobile-menu">
+              <li>
+                <a href='about.html'
+                  class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-zinc-900 hover:bg-black focus:shadow-outline focus:outline-none about"
+                  aria-label="About"
+                  title="About">
+                  About
+                </a>
+              </li>
+            </ul>
+            <div class="lg:hidden">
+                <button aria-label="Open Menu" title="Open Menu" class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline mobile-menu-button">
+                  <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+                    <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
+                    <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main hero -->
+
+        <!-- infinite carousel -->
+        <div class="slider">
+            <div class="slide-track" id="slider">
+            </div>
+        </div>
+
+        <!-- search button -->
+        <form action="" class="search-bar">
+            <input type="search" name="search" id="textbox_id" pattern=".*\S.*" required>
+            <button class="search-btn" type="button" onclick="getPost()">
+                <span>Search</span>
+            </button>
+        </form>
+        
+    <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
+      <div class="py-3 sm:max-w-xl sm:mx-auto" id="moviecard">
+      </div>
+    </div>
+    <div class="ytrailer" id="ytrailer">
+
+    </div>
+    <!-- random -->
+    <div class="bg-gray-100 dark:bg-transparent">
+      <div class="container mx-auto flex flex-col items-center py-12 sm:py-24">
+        <div class="mb-5 w-11/12 flex-col items-center justify-center sm:mb-10 sm:w-2/3 lg:flex">
+          <h1 class="text-center text-2xl font-black leading-7 text-gray-800 sm:text-3xl md:text-4xl md:leading-10 lg:text-5xl xl:text-6xl">
+            Don't Know 
+            <span class="text-red-500">What</span>
+            To Watch !
+          </h1>
+          <p class="mt-5 text-center text-sm font-normal text-gray-400 sm:mt-10 sm:text-lg lg:w-10/12">Try the Random Button! Movie that you can stream!</p>
+        </div>
+        <div class="flex items-center justify-center">
+          <button class="rounded border border-red-900 bg-black px-4 py-2 text-sm text-red-500 font-bold transition duration-150 ease-in-out hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 sm:px-10 sm:py-4 lg:text-xl lg:font-bold" onclick="random_movie()">RANDOM</button>
+        </div>
+      </div>
+      <div id="moviecard2">
+
+
+      </div>
+  
+    </div>
+
+
+    
+
+</body>
+<script src="index.js"></script>
+</html>
