@@ -49,26 +49,6 @@ async function getPost() {
 
 }
 function movietime(data, wheredata, Otrailer){
-    // console.log(document.getElementById('textbox_id').value);
-    // const mainmovie = document.createElement('div');
-    // mainmovie.classList.add('bg-white', 'shadow-lg', 'border-gray-100', 'max-h-80', 'border', 'sm:rounded-3xl', 'p-8', 'flex' ,'space-x-8');
-    // mainmovie.innerHTML = `
-    //       <div class="h-48 overflow-visible w-1/2">
-    //           <img class="rounded-3xl shadow-lg" src="https://image.tmdb.org/t/p/w500/${data.post.results[0].poster_path}" alt="">
-    //       </div>
-    //       <div class="flex flex-col w-1/2 space-y-4">
-    //         <div class="flex justify-between items-start">
-    //           <h2 class="text-3xl font-bold text-gray-900">Shawshank Redemption</h2>
-    //           <div class="bg-yellow-400 font-bold rounded-xl p-2 text-gray-800">7.2</div>
-    //         </div>
-    //         <div>
-    //           <div class="text-sm text-gray-400">Series</div>
-    //           <div class="text-lg text-gray-800">2019</div>
-    //         </div>
-    //           <p class=" text-gray-700 max-h-40 overflow-y-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    //         <div class="flex text-2xl font-bold text-a text-gray-800">$83.90</div>
-    //       </div>
-    // `;
     moviecard.innerHTML = `
     <div class="bg-white shadow-lg border-gray-100 max-h-70 border sm:rounded-5xl p-4 flex space-x-6">
           <div class="h-48 overflow-visible w-1/2">
